@@ -1,6 +1,14 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Calculator";
 }
-<h1>@ViewData["Title"]</h1>
+<h1>Services Calculator</h1>
+<label>Hours Needed:</label>
+<input id="hours" type="number" min="1" />
 
-<p>Use this page to detail your site's privacy policy.</p>
+<label>Rate per Hour:</label>
+<input id="rate" type="text" value="30" readonly />
+
+<button id="calcBtn">Calculate Total</button>
+
+<label>Total:</label>
+<input id="total" type="text" readonly />
