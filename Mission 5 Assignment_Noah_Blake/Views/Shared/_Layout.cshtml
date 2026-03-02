@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="~/Mission_5_Assignment_Noah_Blake.styles.css" asp-append-version="true"/>
 </head>
 <body>
+@* Shared site navigation used across all views for consistent UX. *@
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
@@ -32,17 +33,20 @@
         </div>
     </nav>
 </header>
+@* Main content area where each view is rendered. *@
 <div class="container">
     <main role="main" class="pb-3">
         @RenderBody()
     </main>
 </div>
 
+@* Global footer shown on every page. *@
 <footer class="border-top footer text-muted">
     <div class="container">
         <p>© 2026 Noah Blake | IS 413 Mission #5</p>
     </div>
 </footer>
+@* Shared scripts loaded once at layout level; page-specific scripts are injected via RenderSection. *@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>

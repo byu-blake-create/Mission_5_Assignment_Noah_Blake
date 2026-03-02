@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Calculator";
 }
+@* Simple tutoring calculator form: user enters hours, fixed rate stays read-only, and total is output-only. *@
 <h1>Services Calculator</h1>
 <label>Hours Needed:</label>
 <input id="hours" type="number" min="1" />
@@ -13,6 +14,7 @@
 <label>Total:</label>
 <input id="total" type="text" readonly />
 
+@* Page-specific script hook for calculator behavior and validation. *@
 @section Scripts {
     <script src="~/js/calculator.js"></script>
 }
